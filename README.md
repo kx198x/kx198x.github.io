@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Welcome to GitHub Pages higashim
 
 You can use the [editor on GitHub](https://github.com/kx198x/kx198x.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
