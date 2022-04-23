@@ -1,5 +1,5 @@
 ---
-by: None
+author: x
 tags: x
 ---
 
