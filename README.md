@@ -6,4 +6,6 @@
 
 みなさんにとって少しでも興味ある記事があれば嬉しいです．
 
+![Book logo](/assets/fig/20220423_01.svg)
+
 <img src="/assets/fig/20220423_01.svg">
