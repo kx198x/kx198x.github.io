@@ -9,14 +9,9 @@ tags: x
 
 ## x
 
-## y
+![fig01](/assets/fig/20220423_01.svg)
 
-\(x\)
+## y
 
 $x$
 
-\[
-    x
-\]
-
-z
