@@ -24,12 +24,26 @@
         -->
 
         <p>{{ site.description | default: site.github.project_tagline }}</p>
-
+        
+        記事
         <ul>
           {% for post in site.posts %}
+            {% if "_[memo]" not in post %}
             <li>
               <a href="{{ post.url }}">{{ post.title }}</a>
             </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+
+        メモ
+        <ul>
+          {% for post in site.posts %}
+            {% if "_[memo]" in post %}
+            <li>
+              <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+            {% endif %}
           {% endfor %}
         </ul>
       </header>
