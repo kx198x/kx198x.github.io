@@ -9,8 +9,6 @@ tags: x
 
 ## x
 
-![fig01](/assets/fig/20220423_01.svg)
-
 ## y
 
 $x$
