@@ -28,7 +28,7 @@
         記事
         <ul>
           {% for post in site.posts %}
-            {% if "_[memo]" not in post %}
+            {% if "_[memo]" not in post.title %}
             <li>
               <a href="{{ post.url }}">{{ post.title }}</a>
             </li>
@@ -39,7 +39,7 @@
         メモ
         <ul>
           {% for post in site.posts %}
-            {% if "_[memo]" in post %}
+            {% if "_[memo]" in post.title %}
             <li>
               <a href="{{ post.url }}">{{ post.title }}</a>
             </li>
