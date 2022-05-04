@@ -12,6 +12,8 @@ tags: x
 
 - [Calculation time](#calculation-time)
 - [Memory](#memory)
+- [numpy](#numpy)
+- [k-shortest-paths](#k-shortest-paths)
 
 <!-- /code_chunk_output -->
 
@@ -39,3 +41,44 @@ pip install psutil (計測時間向上のため)
 ```Shell
 python -m memory_profiler ***.py
 ```
+
+## numpy
+
+
+```Python
+xi = np.zeros(nxi)
+for n in range(nxi):
+    for i in range(a_nrow):
+        xi[n] += np.dot(a[i], self.bitarray[n+i+selfn_bound])
+```
+
+```Python
+xi = np.zeros(nxi)
+for n in range(nxi):
+    vb = self.bitarray[n+self.n_bound:n+self.n_bound+a_nrow].flatten()
+    xi[n] = np.dot(a.flatten(), vb)
+```
+
+x ... for 文
+o ... 1次元化して内積
+
+## k-shortest-paths
+
+$(n,m)=(\| V\| ,\| E\| )$
++ Yen's algorithm: $\mathcal{O}(kn(m+n\log n))$[^1] >>> networkx
++ Eppstein's algorithm: $\mathcal{O}(m+n\log n + k\log k)$[^2] >>> JGraphT
+jgrapht.algorithms.shortestpaths.eppstein_k[^3]
+
+```Shell
+pip install jgrapht
+```
+```jgrapht.create_graph()``` >>> weighted graph, then Eppstein's algorithm
+
+
+---
+
+[^1]: Jin Y. Yen, “Finding the K Shortest Loopless Paths in a Network”, Management Science, Vol. 17, No. 11, pp. 712-716, (1971)
+
+[^2]: D. Eppstein, "Finding the k Shortest Paths," SIAM J. Comput. 28 (2): pp. 652–673 (1998)
+
+[^3]: https://python-jgrapht.readthedocs.io/en/jgrapht-1.5.0.1/api/algorithms/shortestpaths.html
