@@ -85,4 +85,4 @@ pip install jgrapht
 
 [^2]: D. Eppstein, "Finding the k Shortest Paths," SIAM J. Comput. 28 (2): pp. 652–673 (1998)
 
-[^3]: https://python-jgrapht.readthedocs.io/en/jgrapht-1.5.0.1/api/algorithms/shortestpaths.html
+[^3]: [JGraphT Algorithms Shortest-Paths](https://python-jgrapht.readthedocs.io/en/jgrapht-1.5.0.1/api/algorithms/shortestpaths.html)
