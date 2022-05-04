@@ -55,6 +55,7 @@ for n in range(nxi):
     for i in range(a_nrow):
         xi[n] += np.dot(a[i], self.bitarray[n+i+selfn_bound])
 ```
+x ... for 文
 
 ```Python
 xi = np.zeros(nxi)
@@ -62,8 +63,6 @@ for n in range(nxi):
     vb = self.bitarray[n+self.n_bound:n+self.n_bound+a_nrow].flatten()
     xi[n] = np.dot(a.flatten(), vb)
 ```
-
-x ... for 文
 o ... 1次元化して内積
 
 ### k-shortest-paths
