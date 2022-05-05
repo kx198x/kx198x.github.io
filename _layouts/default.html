@@ -25,7 +25,7 @@
 
         <p>{{ site.description | default: site.github.project_tagline }}</p>
       
-        記事
+        記事一覧
         <div class="side-menu">
           <ul class="li-navi">
             {% for post in site.posts %}
@@ -35,11 +35,12 @@
             {% endfor %}
           </ul>
         </div>
+        <!--
         忘備録
         <div class="side-menu">
           <ul>
             {% for post in site.posts %}
-              {% if 'memo' in {{ post.title }} %}
+              {% if 'memo' in post.title %}
                 <li>
                   <a href="{{ post.url }}">{{ post.title }}</a>
                 </li>
@@ -47,6 +48,7 @@
             {% endfor %}
           </ul>
         </div>
+        -->
       </header>
       <section>
 
