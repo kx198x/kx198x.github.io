@@ -29,26 +29,12 @@
         <div class="side-menu">
           <ul class="li-navi">
             {% for post in site.posts %}
-            <li>
-              <a href="{{ post.url }}">{{ post.title }}</a>
-            </li>
+              <li>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+              </li>
             {% endfor %}
           </ul>
         </div>
-        <!--
-        忘備録
-        <div class="side-menu">
-          <ul>
-            {% for post in site.posts %}
-              {% if 'memo' in post.title %}
-                <li>
-                  <a href="{{ post.url }}">{{ post.title }}</a>
-                </li>
-              {% endif %}
-            {% endfor %}
-          </ul>
-        </div>
-        -->
       </header>
       <section>
 
