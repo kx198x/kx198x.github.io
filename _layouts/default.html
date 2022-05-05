@@ -39,11 +39,9 @@
         <div class="side-menu">
           <ul>
             {% for post in site.posts %}
-            {% if "[memo]" in post.title %}
             <li>
               <a href="{{ post.url }}">{{ post.title }}</a>
             </li>
-            {% endif %}
             {% endfor %}
           </ul>
         </div>
