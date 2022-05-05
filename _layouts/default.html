@@ -24,8 +24,9 @@
         -->
 
         <p>{{ site.description | default: site.github.project_tagline }}</p>
-        
-        <!--<div class="side-menu"></div>-->
+      </header>
+      
+      <div class="side-menu">
         <ul>
           {% for post in site.posts %}
           <li>
@@ -45,7 +46,7 @@
           {% endfor %}
         </ul>
         -->
-      </header>
+      </div><!--</header>-->
       <section>
 
       {{ content }}
