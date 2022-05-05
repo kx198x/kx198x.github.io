@@ -44,9 +44,6 @@ pandas dataframe を基本とするグラフデータ処理系の忘備録．
 ---
 ## Third-party IF extension
 
-### graph-numpy
-
----
 ### graph-pandas
 
 ---
@@ -90,21 +87,13 @@ df_nodes = pd.read_csv(filename, index_col=0)
 ### graph-numpy
 
 ---
-## pandas dataframe でのグラフ処理
+## pandas グラフデータ処理
 
 ### 地理座標系でのノード間距離計算(WGS84)
 
 ```Python
 >>> 
 ```
-
----
-## plot
-
-### matplotlib
-
----
-### graphviz
 
 ---
 ## Other extension
@@ -114,3 +103,16 @@ df_nodes = pd.read_csv(filename, index_col=0)
 #### distance Laplacian matrix
 
 #### distance Laplacian spectrum
+
+---
+## plot examples
+
+### networkx extension
+
++ 構造
+pre: {fig, axis, map} >> {graph}
+optional: {subgraph} >> {path} >> {link}
+post: {range, etc} >> {show}
+
+---
+### graphviz
