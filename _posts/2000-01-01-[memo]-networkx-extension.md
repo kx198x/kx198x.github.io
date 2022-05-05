@@ -14,23 +14,22 @@ pandas dataframe を基本とするグラフデータ処理系の忘備録．
 - [Networkx base](#networkx-base)
     - [アトリビュート継承](#アトリビュート継承)
 - [Third-party IF extension](#third-party-if-extension)
-  - [graph-numpy](#graph-numpy)
   - [graph-pandas](#graph-pandas)
     - [graph to pandas](#graph-to-pandas)
     - [pandas to graph](#pandas-to-graph)
   - [pandas-data](#pandas-data)
     - [from/to excel](#fromto-excel)
     - [to/from csv](#tofrom-csv)
-  - [graph-numpy](#graph-numpy-1)
-- [pandas dataframe でのグラフ処理](#pandas-dataframe-でのグラフ処理)
+  - [graph-numpy](#graph-numpy)
+- [pandas グラフデータ処理](#pandas-グラフデータ処理)
   - [地理座標系でのノード間距離計算(WGS84)](#地理座標系でのノード間距離計算wgs84)
-- [plot](#plot)
-  - [matplotlib](#matplotlib)
-  - [graphviz](#graphviz)
 - [Other extension](#other-extension)
   - [Linear algebra](#linear-algebra)
     - [distance Laplacian matrix](#distance-laplacian-matrix)
     - [distance Laplacian spectrum](#distance-laplacian-spectrum)
+- [plot examples](#plot-examples)
+  - [networkx extension](#networkx-extension)
+  - [graphviz](#graphviz)
 
 <!-- /code_chunk_output -->
 
@@ -110,9 +109,9 @@ df_nodes = pd.read_csv(filename, index_col=0)
 ### networkx extension
 
 + 構造
-pre: {fig, axis, map} >> {graph}
-optional: {subgraph} >> {path} >> {link}
-post: {range, etc} >> {show}
+pre: {fig, axis, map, graph}
+optional: {subgraph, path, edge, node}
+post: {xylim, ..., show}
 
 ---
 ### graphviz
