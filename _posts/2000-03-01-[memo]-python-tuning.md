@@ -77,6 +77,8 @@ pip install jgrapht
 ```
 ```jgrapht.create_graph()``` >> weighted graph, then Eppstein's algorithm
 
+### Pulp
+
 
 ---
 
