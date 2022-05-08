@@ -64,12 +64,25 @@ G = pn.graph.ext_networkx.dataframe_to_graph(
 
 #### from/to excel
 
++ from .xlsx w/o note
 ```Python
 df_nodes, df_edges = pn.graph.io.read_graph(filename)
 ```
 
++ from .xlsx w/ note
+```Python
+df_nodes, df_edges, df_note = pn.graph.io.read_graph(filename, note=True)
+```
+
++ to .xlsx w/o note
 ```Python
 pn.graph.io.write_graph(filename, df_nodes, df_edges)
+```
+
++ to .xlsx w/ note
+```Python
+note = {'x': 1, 'y': 2}
+pn.graph.io.write_graph(filename, df_nodes, df_edges, note=note)
 ```
 
 #### to/from csv
