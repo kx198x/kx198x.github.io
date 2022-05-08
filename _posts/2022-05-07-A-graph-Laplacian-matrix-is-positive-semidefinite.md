@@ -50,7 +50,7 @@ $\Box$
 ---
 ## Lemma.2 $\mathcal{L}_w \succeq 0$
 
-<u>**proof**</u>
+<u>proof</u>
 
 $\Box$
 
