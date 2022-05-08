@@ -35,15 +35,15 @@ tags: spectral graph theory, Laplacian, positive semi-definite
 
 > **Theorem.1** $\bm{x}^T\mathcal{L}\bm{x}\ge 0 \Rightarrow \mathcal{L} \succeq 0$
 
-$$\begin{align}
+$$\begin{align*}
 f_i&=\mathcal{L}_{ij}x_i\\
 &=tbd
-\end{align}$$
+\end{align*}$$
 
-$$\begin{align}
-\\bm{x}^T\mathcal{L}\bm{x}&=\sum_{v_i} x_i f_i\\
+$$\begin{align*}
+{\bm x}^T\mathcal{L}\bm{x}&=\sum_{v_i} x_i f_i\\
 &=\sum_{v_i} x_i\sum_{v_j\in \mathcal{N}(v_i)}(x_i-x_j)
-\end{align}$$
+\end{align*}$$
 
 $\Box$
 
