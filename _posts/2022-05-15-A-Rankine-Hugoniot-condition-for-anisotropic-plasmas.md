@@ -28,7 +28,9 @@ $$\begin{align*}
 &+2\Lambda_b(\epsilon_1,\epsilon_2,\theta_1,\beta_1,M_{n2}^2)\cdot\epsilon_1M_{n1}^2\\
 &+\Lambda_c(\epsilon_1,\epsilon_2,\theta_1,\beta_1,M_{n2}^2)=0
 \end{align*}$$
+
 where
+
 $$\begin{align*}
 \Lambda_a&=\frac{\gamma-1}{\gamma}\cdot\frac{\xi_2}{\cos^2\theta_1}
 -\xi_1M_{n2}^2\tan^2\theta_1,\\
@@ -50,7 +52,9 @@ $$\begin{align*}
     -\epsilon_1^2\xi_1\tan^2\theta_1
 \right\}
 \end{align*}$$
+
 and
+
 $$\begin{align*}
 \xi_1 &= \frac{\gamma-1}{\gamma}\left(M_{n2}^2-2+\frac{1}{\epsilon_2}\right)
 -\frac{1}{3\gamma}\left(2+\frac{1}{\epsilon_2}\right),\\
