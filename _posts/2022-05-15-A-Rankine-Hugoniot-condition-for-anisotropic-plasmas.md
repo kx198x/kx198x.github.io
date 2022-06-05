@@ -27,7 +27,7 @@ $$\begin{align*}
 \Lambda_a(\epsilon_2,\theta_1,M_{n2}^2)\cdot\epsilon_1^2M_{n1}^4
 &+2\Lambda_b(\epsilon_1,\epsilon_2,\theta_1,\beta_1,M_{n2}^2)\cdot\epsilon_1M_{n1}^2\\
 &+\Lambda_c(\epsilon_1,\epsilon_2,\theta_1,\beta_1,M_{n2}^2)=0
-\end{align*}$$
+\end{align*}$$<br>
 
 where
 
