@@ -23,13 +23,22 @@ tags: python, tuning
 
 ### Calculation time
 
++ install
+
 ```Python
 pip install line_profiler
 ```
 
++ run
+
+測定対象関数の前行に `@profile` 追加し実行:
+
 ```Shell
 kernprof -l ***.py
 ```
+
++ check run-time
+
 ```Shell
 python -m line_profiler ***.lprof
 ```
