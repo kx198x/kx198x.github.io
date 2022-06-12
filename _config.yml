@@ -4,5 +4,5 @@ description: きのおもむくままに
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-minimal
-gems:
+plugins:
   - jekyll-sitemap
