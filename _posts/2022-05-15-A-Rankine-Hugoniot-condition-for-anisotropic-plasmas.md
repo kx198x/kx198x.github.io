@@ -19,7 +19,7 @@ tags: Rankine-Hugoniot, shock, anisotropy, MHD
 <!-- /code_chunk_output -->
 
 ---
-##### Lemma
+##### 補題
 
 温度異方性があり流体近似が成り立つプラズマにおいて，以下の Rankine-Hugoniot 条件が成り立つ [^1]
 
@@ -63,7 +63,7 @@ $$\begin{align*}
 
 modified intermediate Mach number $M_n=V_n/(\sqrt{\epsilon}V_{An})$, where $V_{An}=B_n/\sqrt{4\pi\rho}$[^2]
 
-##### <u>proof</u>
+##### <u>証明</u>
 
 RH relations are as follows[^3]
 $$\begin{align}
