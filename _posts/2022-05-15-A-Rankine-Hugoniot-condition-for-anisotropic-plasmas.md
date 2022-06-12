@@ -21,15 +21,15 @@ tags: Rankine-Hugoniot, shock, anisotropy, MHD
 ---
 ##### Lemma
 
-Rankine-Hugoniot condition for anisotropic plasmas is[^1]
+温度異方性があり流体近似が成り立つプラズマにおいて，以下の Rankine-Hugoniot 条件が成り立つ [^1]
 
 $$\begin{align*}
 \Lambda_a(\epsilon_2,\theta_1,M_{n2}^2)\cdot\epsilon_1^2M_{n1}^4
 &+2\Lambda_b(\epsilon_1,\epsilon_2,\theta_1,\beta_1,M_{n2}^2)\cdot\epsilon_1M_{n1}^2\\
 &+\Lambda_c(\epsilon_1,\epsilon_2,\theta_1,\beta_1,M_{n2}^2)=0
-\end{align*}$$<br>
+\end{align*}$$
 
-where
+ただし
 
 $$\begin{align*}
 \Lambda_a&=\frac{\gamma-1}{\gamma}\cdot\frac{\xi_2}{\cos^2\theta_1}
