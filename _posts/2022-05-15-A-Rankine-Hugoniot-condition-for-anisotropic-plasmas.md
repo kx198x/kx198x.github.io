@@ -71,9 +71,9 @@ modified intermediate Mach number $M_n=V_n/(\sqrt{\epsilon}V_{An})$, where $V_{A
 deHoffman-Teller 系で考える．$x\rightarrow t,x\rightarrow n, y\rightarrow$none, RH relations are as follows[^3]
 $$\begin{align}
 \left[\rho V_n\right]_2^1&=0,\\
-\left[\rho V_n^2+\bar{p}+\frac{1}{3}\left(\epsilon+\frac{1}{2}\right)\frac{\left|\bm{B}^2\right|}{4\pi}-\epsilon\frac{B_n^2}{4\pi}\right]_2^1&=0,\\
+\left[\rho V_n^2+\bar{p}+\frac{1}{3}\left(\epsilon+\frac{1}{2}\right)\frac{\left|{\boldsymbol B}^2\right|}{4\pi}-\epsilon\frac{B_n^2}{4\pi}\right]_2^1&=0,\\
 \left[\rho V_nV_t-\epsilon\frac{B_nB_t}{4\pi}\right]_2^1&=0,\\
-\left[\rho V_n\left(V^2+\frac{\gamma}{\gamma-1}\frac{\bar{p}}{\rho}\right)+\frac{\epsilon+2}{3}V_n\frac{\left|\bm{B}^2\right|}{4\pi}
+\left[\rho V_n\left(V^2+\frac{\gamma}{\gamma-1}\frac{\bar{p}}{\rho}\right)+\frac{\epsilon+2}{3}V_n\frac{\left|{\boldsymbol B}^2\right|}{4\pi}
 -\epsilon V_n\frac{B_n^2}{4\pi}
 -\epsilon V_t\frac{B_nB_t}{4\pi}
 \right]_2^1&=0,
