@@ -93,12 +93,12 @@ $\Box$
 ---
 ##### 物理的解釈
 
-辿る順番は
+辿る順番
 
-+ 温度異方性のある Rankine-Hugoniot 条件
-+ b
-+ c
-
++ 現実が MHD - collisionless - MHD という異なる方程式系の接続である場合に，MHD - MHD という接続関係と同じ結果になると言えるか．
++ Double adiabatic の意味．
++ 波の伝搬と温度異方性．発展性条件．
++ 導出した RH の具体的解釈．
 
 ---
 ##### Python solver
