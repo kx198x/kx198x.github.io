@@ -54,6 +54,8 @@ class AnisotropicMHD():
             ) - self.eps1**2*xi1*math.tan(self.th1)**2
         )
         
+        x=Lamb**2-Lama*Lamc
+        print(x)
         self.Mn1m = (Lamb-np.sqrt(Lamb**2-Lama*Lamc))/Lama/self.eps1
         self.Mn1p = (Lamb+np.sqrt(Lamb**2-Lama*Lamc))/Lama/self.eps1
     
