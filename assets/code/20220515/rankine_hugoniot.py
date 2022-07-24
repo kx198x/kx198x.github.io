@@ -13,7 +13,7 @@ class AnisotropicMHD():
     def set_param(
         self, gam=5/3,
         eps1=1.0, eps2=1.0,
-        th1=0.0,
+        th1=np.deg2rad(87.5),
         beta1=1.0,
         Mn2=None):
         self.gam = gam
@@ -24,43 +24,61 @@ class AnisotropicMHD():
         self.Mn2 = Mn2
         
         if Mn2 == None:
-            self.Mn2 = np.linspace(0.0,1.0,50)
+            self.Mn2 = np.linspace(0.01,1.2,1000)
     
     def solve(self):
         Gamp = (self.gam + 1.)/self.gam
         Gamm = (self.gam - 1.)/self.gam
-        
+
         xi1 = Gamm*(self.Mn2 - 2. + 1./self.eps2) \
             - (2. + 1./self.eps2)/(3.*self.gam)
         xi2 = (self.Mn2 - 1.)**2
-        
+
+        csq = math.cos(self.th1)**2
+        tsq = math.tan(self.th1)**2
+        Lama = xi1*self.Mn2*tsq - Gamm*xi2/csq
+        Lamb = xi2*self.Mn2 - xi1*self.Mn2*tsq - 0.5*self.beta1*xi2/csq
+        Lamc = self.Mn2*(
+            xi1*tsq + xi2*tsq - Gamp*xi2*self.Mn2 + self.beta1*xi2/csq
+        )
+        """
         Lama = Gamm*xi2/math.cos(self.th1)**2 \
             - xi1*self.Mn2*math.tan(self.th1)**2
-            
+
         Lamb = xi2*(
             Gamm*2.*(1. - self.eps1)/3/math.cos(self.th1)**2 \
             + 0.5*self.eps1*self.beta1 \
             - self.eps2*self.Mn2
         ) + self.eps1*xi1*self.Mn2*math.tan(self.th1)**2
-        
+
         Lamc = self.Mn2*(
             self.eps2**2*xi2*(
                 Gamp*self.Mn2 \
                 - self.eps1*self.beta1/self.eps2/math.cos(self.th1)**2 \
                 + (self.eps1/self.eps2 - 1.) \
-                + (4.*Gamm*(self.eps2-1.) 
-                   - (2.*self.eps1+1.)*math.tan(self.th1)**2
-                )/3./self.eps2
+                + 2./3.*(1.-1./self.eps2)*(2*Gamm-math.tan(self.th1)**2)
+                #+ (4.*Gamm*(self.eps2-1.) 
+                #   - (2.*self.eps1+1.)*math.tan(self.th1)**2
+                #)/3./self.eps2
             ) - self.eps1**2*xi1*math.tan(self.th1)**2
         )
-        
+        """
+
         x=Lamb**2-Lama*Lamc
-        print(x)
-        self.Mn1m = (Lamb-np.sqrt(Lamb**2-Lama*Lamc))/Lama/self.eps1
-        self.Mn1p = (Lamb+np.sqrt(Lamb**2-Lama*Lamc))/Lama/self.eps1
-    
+        #print(Lamb**2-Lama*Lamc)
+        self.Mn1m = (-Lamb-np.sqrt(x))/(Lama*self.eps1)
+        self.Mn1p = (-Lamb+np.sqrt(x))/(Lama*self.eps1)
+
     def plot(self):
-        plt.plot(self.Mn1m, self.Mn2)
-        plt.plot(self.Mn1p, self.Mn2)
+        fig = plt.figure()
+        ax = fig.add_subplot(111)
+        plt.plot(self.Mn2, self.Mn1m, 'k-')
+        plt.plot(self.Mn2, self.Mn1p, 'k-')
+        ax.set_aspect('equal')
+        plt.ylabel(r'$M_{A1}^2$')
+        plt.xlabel(r'$M_{A2}^2$')
+        xmax = np.max(self.Mn2)
+        plt.xlim([0,xmax])
+        plt.ylim([0,xmax])
         plt.show()
                         
