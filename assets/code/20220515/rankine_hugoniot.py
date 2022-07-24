@@ -24,7 +24,7 @@ class AnisotropicMHD():
         self.Mn2 = Mn2
         
         if Mn2 == None:
-            self.Mn2 = np.linspace(0.01,1.2,1000)
+            self.Mn2 = np.linspace(1e-4,1.2,10000)
     
     def solve(self):
         Gamp = (self.gam + 1.)/self.gam
@@ -36,36 +36,25 @@ class AnisotropicMHD():
 
         csq = math.cos(self.th1)**2
         tsq = math.tan(self.th1)**2
-        Lama = xi1*self.Mn2*tsq - Gamm*xi2/csq
-        Lamb = xi2*self.Mn2 - xi1*self.Mn2*tsq - 0.5*self.beta1*xi2/csq
-        Lamc = self.Mn2*(
-            xi1*tsq + xi2*tsq - Gamp*xi2*self.Mn2 + self.beta1*xi2/csq
-        )
-        """
-        Lama = Gamm*xi2/math.cos(self.th1)**2 \
-            - xi1*self.Mn2*math.tan(self.th1)**2
+        
+        Lama = Gamm*xi2/csq - xi1*self.Mn2*tsq
 
         Lamb = xi2*(
-            Gamm*2.*(1. - self.eps1)/3/math.cos(self.th1)**2 \
-            + 0.5*self.eps1*self.beta1 \
-            - self.eps2*self.Mn2
-        ) + self.eps1*xi1*self.Mn2*math.tan(self.th1)**2
+            Gamm*2.*(1.0-self.eps1)/(3.0*csq) \
+            + 0.5*self.eps1*self.beta1/csq - self.eps2*self.Mn2
+        ) + self.eps1*xi1*self.Mn2*tsq
 
         Lamc = self.Mn2*(
             self.eps2**2*xi2*(
                 Gamp*self.Mn2 \
-                - self.eps1*self.beta1/self.eps2/math.cos(self.th1)**2 \
-                + (self.eps1/self.eps2 - 1.) \
-                + 2./3.*(1.-1./self.eps2)*(2*Gamm-math.tan(self.th1)**2)
-                #+ (4.*Gamm*(self.eps2-1.) 
-                #   - (2.*self.eps1+1.)*math.tan(self.th1)**2
-                #)/3./self.eps2
-            ) - self.eps1**2*xi1*math.tan(self.th1)**2
+                - self.eps1*self.beta1/self.eps2/csq \
+                + self.eps1/self.eps2 - 1.0 \
+                + (4.*Gamm*(self.eps2-1.0) - (2.0*self.eps1+1.0)*tsq
+                )/(3.0*self.eps2)
+            ) - self.eps1**2*xi1*tsq
         )
-        """
 
         x=Lamb**2-Lama*Lamc
-        #print(Lamb**2-Lama*Lamc)
         self.Mn1m = (-Lamb-np.sqrt(x))/(Lama*self.eps1)
         self.Mn1p = (-Lamb+np.sqrt(x))/(Lama*self.eps1)
 
@@ -80,5 +69,6 @@ class AnisotropicMHD():
         xmax = np.max(self.Mn2)
         plt.xlim([0,xmax])
         plt.ylim([0,xmax])
+        plt.grid()
         plt.show()
                         
