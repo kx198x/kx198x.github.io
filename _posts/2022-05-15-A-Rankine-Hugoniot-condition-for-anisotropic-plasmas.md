@@ -135,25 +135,31 @@ $\Box$
 
 ###### download/install
 
-[ここから](https://kx198x.github.io/assets/code/20220515/rankine_hugoniot.py)ダウンロード
+[ここから](https://kx198x.github.io/assets/code/20220515/rankine_hugoniot.py)ダウンロードして，パスの通った適当な場所に置く．
 
 ###### example
+
+オブジェクト定義:
 
 ```Python
 import rankine_hugoniot as rh
 obj = rh.AnisotropicMHD()
 ```
 
-```Python
-obj.set_param(beta1=1e-2, eps2=0.6)
-ma1sq, ma2sq = obj.solve()
-```
+パラメータ設定（下流の異方性パラメータを必要とするところに，このモデルの気持ち悪さがある）:
 
 ```Python
-obj.plot(ma1sq, ma2sq)
+obj.set_param(beta1=1e-2, eps1=1.0, eps2=0.6)
+obj.solve()
 ```
 
-<img src="/assets/fig/20220515/shock_curve.png" alt="relations" style="width: 100%;" />
+プロット:
+
+```Python
+obj.plot()
+```
+
+<img src="/assets/fig/20220515/shock_curve.png" alt="relations" style="width: 100%;" align="center"/>
 <figcaption align = "center"><b>Fig.1: Shock curve</b></figcaption>
 
 ---
