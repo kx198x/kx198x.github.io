@@ -69,7 +69,7 @@ $$\begin{align*}
 
 $M_{A1}, M_{A2}$ は Modified intermediate Mach number で $M_A=V_n/(\sqrt{\epsilon}V_{An})$ と定義される[^2]．ここで $V_{An}=B_n/\sqrt{4\pi\rho}$ は衝撃波面垂直方向の Alfven 速度で，温度異方性パラメータ $\epsilon=1-(\beta_\parallel-\beta_\perp)/2$ による位相速度補正が考慮される形となっている．
 
-##### <u>証明</u>
+#### <u>証明</u>
 
 右手系直交座標において，$yz$ 平面内に衝撃波面が存在し，簡単のため $\mathbf{V}\times\mathbf{B}=\mathbf{0}$ となる de Hoffman-Teller 系で斜め衝撃波を観測しているとする．このとき Rankine-Hugoniot 条件は以下で表される[^3]
 
@@ -121,7 +121,7 @@ $$\begin{align*}
 $\Box$
 
 ---
-##### 物理的解釈
+#### 物理的解釈
 
 辿る順番
 
@@ -131,13 +131,13 @@ $\Box$
 + 導出した RH の具体的解釈．
 
 ---
-##### Python solver
+#### Python solver
 
-###### download/install
+##### download/install
 
 [ここから](https://kx198x.github.io/assets/code/20220515/rankine_hugoniot.py)ダウンロードして，パスの通った適当な場所に置く．
 
-###### example
+##### example
 
 オブジェクト定義:
 
