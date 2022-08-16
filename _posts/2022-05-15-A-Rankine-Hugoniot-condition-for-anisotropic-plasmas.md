@@ -146,7 +146,7 @@ import rankine_hugoniot as rh
 obj = rh.AnisotropicMHD()
 ```
 
-パラメータ設定（下流の異方性パラメータを必要とするところに，このモデルの気持ち悪さがある）:
+パラメータ設定（入力に下流の異方性パラメータを必要とするところに，鶏が先か卵が先かといったこのモデル独特の気持ち悪さがある）:
 
 ```Python
 obj.set_param(beta1=1e-2, eps1=1.0, eps2=0.6)
