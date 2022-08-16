@@ -71,7 +71,7 @@ modified intermediate Mach number $M_A=V_n/(\sqrt{\epsilon}V_{An})$, where $V_{A
 
 ##### <u>証明</u>
 
-簡単のため，$\mathbf{V}\times\mathbf{B}=\mathbf{0}$ deHoffman-Teller 系で考える．$x\rightarrow t,x\rightarrow n, y\rightarrow$none, RH relations are as follows[^3]
+簡単のため $\mathbf{V}\times\mathbf{B}=\mathbf{0}$ となる deHoffman-Teller 系で考える．$x\rightarrow t,x\rightarrow n, y\rightarrow$none, RH relations are as follows[^3]
 $$\begin{align}
 \left[\rho v_x\right]_2^1&=0,\\
 %
@@ -153,5 +153,5 @@ obj.plot(ma1sq, ma2sq)
 
 ---
 [^1]: K. Higashimori, M. Hoshino, The relation between ion temperature anisotropy and formation of slow shocks in collisionless magnetic reconnection, Journal of Geophysical Research: Space Physics, 10.1029/2011JA016817, 117, A1, (2012). [https://doi.org/10.1029/2011JA016817](https://doi.org/10.1029/2011JA016817)
-[^2]: L.-N. Hau and B.U.O. Sonnerup, "On the structure of resistive MHD intermediate shocks," J. Geophys. Res., 94, 6539–6551, (1989). [https://doi.org/10.1029/JA094iA06p06539](https://doi.org/10.1029/JA094iA06p06539)
+[^2]: L.-N. Hau and B.U.Ö. Sonnerup, "On the structure of resistive MHD intermediate shocks," J. Geophys. Res., 94, 6539–6551, (1989). [https://doi.org/10.1029/JA094iA06p06539](https://doi.org/10.1029/JA094iA06p06539)
 [^3]: H. Karimabadi, D. Krauss-Varban, and N. Omidi, "Temperature anisotropy effects and the generation of anomalous slow shocks, Geophys. Res. Lett., 22, 2689–2692, (1995). [https://doi.org/10.1029/95GL02788](https://doi.org/10.1029/JA094iA06p06539)
