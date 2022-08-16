@@ -21,7 +21,7 @@ tags: Rankine-Hugoniot, shock, anisotropy, MHD
 <!-- /code_chunk_output -->
 
 ---
-##### 補題
+#### 補題
 
 >温度異方性があり，かつ流体近似が成り立つプラズマ中では，以下の Rankine-Hugoniot 条件が成り立つ [^1]
 >
