@@ -72,6 +72,7 @@ $M_{A1}, M_{A2}$ は Modified intermediate Mach number で $M_A=V_n/(\sqrt{\epsi
 ##### <u>証明</u>
 
 右手系直交座標において，$yz$ 平面内に衝撃波面が存在し，簡単のため $\mathbf{V}\times\mathbf{B}=\mathbf{0}$ となる de Hoffman-Teller 系で斜め衝撃波を観測しているとする．このとき Rankine-Hugoniot 条件は以下で表される[^3]
+
 $$\begin{align}
 \left[\rho v_x\right]_2^1&=0,\\
 %
@@ -98,6 +99,7 @@ $$\begin{align*}
 \end{align*}$$
 
 (3) は
+
 $$\begin{align*}
 \tan^2\theta_2 = \frac{\epsilon_1^2}{\epsilon_2^2}\cdot
 \frac{\left(M_{n1}-1\right)^2}{\left(M_{n2}-1\right)^2}\tan^2\theta_1,
@@ -114,8 +116,8 @@ $$\begin{align*}
 \right] + \frac{2\gamma\epsilon_2}{\gamma-1}M_{A2}^2\frac{1}{V_{A2}^2}\frac{p_2}{\rho_2}.
 \end{align*}$$
 
-と整理できる．ここで $M_{c1}^2=$ である．
-2 で $\theta_2$ を消去しつつ 1, 3 を整理．
+と整理できる．ここで $M_{c1}^2=$ である．2 で $\theta_2$ を消去しつつ 1, 3 を整理．
+
 $\Box$
 
 ---
@@ -133,7 +135,7 @@ $\Box$
 
 ###### download/install
 
-(ここから)[/assets/fig/20220515/]
+(ここから)[https://kx198x.github.io/assets/code/20220515/rankine_hugoniot.py] ダウンロード
 
 ###### example
 
