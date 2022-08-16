@@ -135,7 +135,7 @@ $\Box$
 
 ###### download/install
 
-(ここから)[https://kx198x.github.io/assets/code/20220515/rankine_hugoniot.py] ダウンロード
+[ここから](https://kx198x.github.io/assets/code/20220515/rankine_hugoniot.py)ダウンロード
 
 ###### example
 
