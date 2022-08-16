@@ -23,12 +23,11 @@ tags: Rankine-Hugoniot, shock, anisotropy, MHD
 ---
 ##### 補題
 
-温度異方性があり，かつ流体近似が成り立つプラズマ中では，以下の Rankine-Hugoniot 条件が成り立つ [^1]
-
+> 温度異方性があり，かつ流体近似が成り立つプラズマ中では，以下の Rankine-Hugoniot 条件が成り立つ [^1]
 $$\begin{align*}
 \Lambda_a(\epsilon_2,\theta_1,M_{A2}^2)\cdot\epsilon_1^2M_{A1}^4
 &+2\Lambda_b(\epsilon_1,\epsilon_2,\theta_1,\beta_1,M_{A2}^2)\cdot\epsilon_1M_{A1}^2\\
-&+\Lambda_c(\epsilon_1,\epsilon_2,\theta_1,\beta_1,M_{A2}^2)=0,
+&+\Lambda_c(\epsilon_1,\epsilon_2,\theta_1,\beta_1,M_{A2}^2)=0.
 \end{align*}$$
 
 ここで $\Lambda_a, \Lambda_b, \Lambda_c$ は以下の関係で決まる．
@@ -155,6 +154,6 @@ obj.plot()
 <figcaption align = "center"><b>Fig.1: Shock curve</b></figcaption>
 
 ---
-[^1]: Higashimori
-[^2]: Hau and Sonnerup
-[^3]: Karimabadi
+[^1]: K. Higashimori, M. Hoshino, The relation between ion temperature anisotropy and formation of slow shocks in collisionless magnetic reconnection, Journal of Geophysical Research: Space Physics, 10.1029/2011JA016817, 117, A1, (2012). https://doi.org/10.1029/2011JA016817
+[^2]: L.-N. Hau and B.U.O. Sonnerup, "On the structure of resistive MHD intermediate shocks," J. Geophys. Res., 94, 6539–6551, (1989). https://doi.org/10.1029/JA094iA06p06539
+[^3]: H. Karimabadi, D. Krauss-Varban, and N. Omidi, "Temperature anisotropy effects and the generation of anomalous slow shocks, Geophys. Res. Lett., 22, 2689–2692, (1995). https://doi.org/10.1029/95GL02788
