@@ -87,22 +87,24 @@ $$\begin{align}
 
 ただし $\bar{p}=(p_\parallel+2p_\perp)/3$ である．$[]_2^1$ の 1,2 はそれぞれ上流下流を表す．
 
-(1), x から，
+衝撃波面と磁場のなす角を $\theta$ とすれば，(1), (2) は
+
 $$\begin{align*}
 &\frac{1}{V_{A2}^2}\frac{p_2}{\rho_2}
 = \epsilon_1 M_{n1}^2+\frac{\epsilon_1}{\gamma}M_{c1}^2
 +\frac{2}{3}\left(\epsilon_2-\epsilon_1\right)
 +\frac{1}{3}\left(\epsilon_1+\frac{1}{2}\right)\tan^2\theta_1\\
-&\hspace{1cm}-\epsilon_2 M_{A2}^2-\frac{1}{3}\left(\epsilon_2+\frac{1}{2}\right)\tan^2\theta_2.
+&\hspace{1cm}-\epsilon_2 M_{A2}^2-\frac{1}{3}\left(\epsilon_2+\frac{1}{2}\right)\tan^2\theta_2,
 \end{align*}$$
 
-x,x から，
+(3) は
 $$\begin{align*}
 \tan^2\theta_2 = \frac{\epsilon_1^2}{\epsilon_2^2}\cdot
-\frac{\left(M_{n1}-1\right)^2}{\left(M_{n2}-1\right)^2}\tan^2\theta_1.
+\frac{\left(M_{n1}-1\right)^2}{\left(M_{n2}-1\right)^2}\tan^2\theta_1,
 \end{align*}$$
 
-x, x から，
+(4) は
+
 $$\begin{align*}
 &\left(1+\tan^2\theta_1\right)\left[
     \epsilon_1^2M_{A1}^4 + \frac{4}{3}\epsilon_1\left(1-\epsilon_1\right)M_{A1}^2
@@ -112,6 +114,7 @@ $$\begin{align*}
 \right] + \frac{2\gamma\epsilon_2}{\gamma-1}M_{A2}^2\frac{1}{V_{A2}^2}\frac{p_2}{\rho_2}.
 \end{align*}$$
 
+と整理できる．ここで $M_{c1}^2=$ である．
 2 で $\theta_2$ を消去しつつ 1, 3 を整理．
 $\Box$
 
