@@ -71,7 +71,7 @@ modified intermediate Mach number $M_A=V_n/(\sqrt{\epsilon}V_{An})$, where $V_{A
 
 ##### <u>証明</u>
 
-簡単のため， deHoffman-Teller 系で考える．$x\rightarrow t,x\rightarrow n, y\rightarrow$none, RH relations are as follows[^3]
+簡単のため，$\mathbf{V}\times\mathbf{B}=\mathbf{0}$ deHoffman-Teller 系で考える．$x\rightarrow t,x\rightarrow n, y\rightarrow$none, RH relations are as follows[^3]
 $$\begin{align}
 \left[\rho v_x\right]_2^1&=0,\\
 %
