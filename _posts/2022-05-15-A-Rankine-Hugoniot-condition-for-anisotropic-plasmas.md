@@ -67,11 +67,11 @@ $$\begin{align*}
 \xi_2&=\left(M_{A2}^2-1\right)^2.
 \end{align*}$$
 
-modified intermediate Mach number $M_A=V_n/(\sqrt{\epsilon}V_{An})$, where $V_{An}=B_n/\sqrt{4\pi\rho}$[^2]
+$M_{A1}, M_{A2}$ は Modified intermediate Mach number で $M_A=V_n/(\sqrt{\epsilon}V_{An})$ と定義される[^2]．ここで $V_{An}=B_n/\sqrt{4\pi\rho}$ は衝撃波面垂直方向の Alfven 速度で，温度異方性パラメータ $\epsilon=1-(\beta_\parallel-\beta_\perp)/2$ による位相速度補正が考慮される形となっている．
 
 ##### <u>証明</u>
 
-簡単のため $\mathbf{V}\times\mathbf{B}=\mathbf{0}$ となる deHoffman-Teller 系で考える．$x\rightarrow t,x\rightarrow n, y\rightarrow$none, RH relations are as follows[^3]
+右手系直交座標において，$yz$ 平面内に衝撃波面が存在し，簡単のため $\mathbf{V}\times\mathbf{B}=\mathbf{0}$ となる de Hoffman-Teller 系で斜め衝撃波を観測しているとする．このとき Rankine-Hugoniot 条件は以下で表される[^3]
 $$\begin{align}
 \left[\rho v_x\right]_2^1&=0,\\
 %
@@ -82,10 +82,10 @@ $$\begin{align}
 \left[\rho v_x\left(v^2+\frac{\gamma}{\gamma-1}\frac{\bar{p}}{\rho}\right)+\frac{\epsilon+2}{3}v_x\frac{B^2}{4\pi}
 -\epsilon v_x\frac{B_x^2}{4\pi}
 -\epsilon v_z\frac{B_xB_z}{4\pi}
-\right]_2^1&=0,
+\right]_2^1&=0.
 \end{align}$$
 
-where $\bar{p}=(p_\parallel+2p_\perp)/3$ and $\epsilon=1-(\beta_\parallel-\beta_\perp)/2$.
+ただし $\bar{p}=(p_\parallel+2p_\perp)/3$ である．$[]_2^1$ の 1,2 はそれぞれ上流下流を表す．
 
 (1), x から，
 $$\begin{align*}
