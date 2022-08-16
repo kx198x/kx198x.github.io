@@ -12,11 +12,11 @@ tags: Rankine-Hugoniot, shock, anisotropy, MHD
 <!-- code_chunk_output -->
 
 - [補題](#補題)
-- [証明](#u証明u)
-- [物理的解釈](#物理的解釈)
-- [Python solver](#python-solver)
-  - [download/install](#downloadinstall)
-  - [example](#example)
+  - [証明](#u証明u)
+  - [物理的解釈](#物理的解釈)
+  - [Python solver](#python-solver)
+    - [download/install](#downloadinstall)
+    - [example](#example)
 
 <!-- /code_chunk_output -->
 
