@@ -12,7 +12,6 @@ pandas dataframe を基本とするグラフデータ処理系の忘備録．
 <!-- code_chunk_output -->
 
 - [Networkx base](#networkx-base)
-    - [アトリビュート継承](#アトリビュート継承)
 - [Third-party IF extension](#third-party-if-extension)
   - [graph-pandas](#graph-pandas)
     - [graph to pandas](#graph-to-pandas)
@@ -36,9 +35,7 @@ pandas dataframe を基本とするグラフデータ処理系の忘備録．
 
 ## Networkx base
 
-![fig01](/assets/fig/20000101_01.svg)
-
-#### アトリビュート継承
+[NetworkX](https://networkx.org/) の
 
 ---
 ## Third-party IF extension
@@ -128,3 +125,5 @@ post: {xylim, ..., show}
 
 ---
 ### graphviz
+
+[^1]: [NetworkX](https://networkx.org/)
