@@ -10,6 +10,7 @@ tags: OSS
 <!-- code_chunk_output -->
 
 - [概要](#概要)
+- [PyPI 登録覚書](#pypi-登録覚書)
 - [最初に知っておくべき前提](#最初に知っておくべき前提)
 - [自分が守るべき事項](#自分が守るべき事項)
 - [他人に守って貰いたい事項](#他人に守って貰いたい事項)
@@ -28,7 +29,59 @@ tags: OSS
 >   1. 自作 OSS は自由に「使用」して貰いたいが，面倒事に巻き込まれたくない．
 >   1. 他の OSS に「利用」する場合は，「利用」したことを明記してほしい．
 
-パッケージ作成や PyPI への登録方法は他の記事[^3]で良くまとめられているので，理解しにくい著作権関係についてまとめる．具体的には，まず最初に知っておくべき前提，自分が守るべき事項（制約 1, 2 からくる），他人に守って貰いたい事項（制約 3, 4 からくる），それらの事項をパッケージに反映するにはどうすればよいか順に述べる．
+パッケージ作成や PyPI への登録方法の覚書，理解しにくい著作権関係についてまとめる．具体的には，まず最初に知っておくべき前提，自分が守るべき事項（制約 1, 2 からくる），他人に守って貰いたい事項（制約 3, 4 からくる），それらの事項をパッケージに反映するにはどうすればよいか順に述べる．
+
+##### PyPI 登録覚書
+
+パッケージ作成や PyPI 登録方法詳細 → [他記事](https://qiita.com/c60evaporator/items/e1ecccab07a607487dcf)参照．
+
+1. required package
+
+    ```shell
+    pip install setuptools
+    pip install twine
+    pip install wheel
+    ```
+
+1. {dist, egg-info}, build from `setup.py`
+
+    ```shell
+    python setup.py sdist
+    python setup.py bdist_wheel
+    ```
+
+1. pypi information for twin upload
+
+    `.pypirc` 設定．
+
+1. upload test
+
+    ```shell
+    twine upload --repository testpypi ./dist/*1.0.0a0*
+    ```
+
+1. upload 1st
+
+    ```shell
+    twine upload --repository pypi ./dist/*1.0.0a0*
+    ```
+
+1. upload 2nd~
+
+
+1. version
+
+    `major#.minor#.build#-alpha.#`
+    + 大幅変更: major increment
+    + 機能追加: minor increment
+    + バグ修正: build increment
+
+    ```text
+    1.0.0-alpha.0
+    1.0.0-alpha.1
+    ‥‥
+    1.0.0
+    ```
 
 ##### 最初に知っておくべき前提
 
