@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: information technology, well begin
+tags: information technology, well being
 ---
 
 Technology has both good and bad aspects. We should consider both sides carefully and choose the technology that will most enrich our society. Most people in the world believe that information technology will only have a positive affect on society but today I would like to discuss whether or not further information technology will truly enrich society.
